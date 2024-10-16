@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255; /* Static text color: black */
+  --background-start-rgb: 15, 15, 15; /* Static light gray start color */
+  --background-end-rgb: 15, 15, 15; /* Static white end color */
+}
+
+body {
+  color: rgb(var(--foreground-rgb)); /* Always black text */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); /* Light gradient background */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
