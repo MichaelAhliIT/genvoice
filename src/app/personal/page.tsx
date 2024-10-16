@@ -9,7 +9,7 @@ export default function Personal() {
   const { status } = useSession({
     required: true,
     onUnauthenticated() {
-      // The user is not authenticated, handle it here.
+      // If the user is not authenticated, it will redirect to login page
       router.replace("/adminLogin");
     },
   });
